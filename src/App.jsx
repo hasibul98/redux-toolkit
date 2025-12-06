@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import Counter from "./view/Counter";
 import TodoApp from "./view/TodoApp";
 import UserList from "./view/UserList";
+import Github from "./view/Github";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <li><Link to="/counter">Counter</Link></li>
             <li><Link to="/todo">TodoApp</Link></li>
             <li><Link to="/userlist">UserList</Link></li>
+            <li><Link to="/github">github</Link></li>
             </ul>
         </nav>
         
@@ -21,6 +23,7 @@ function App() {
              <Route path="/counter" element={<Counter />} />
              <Route path="/todo" element={<TodoApp />} />
              <Route path="/userlist" element={<UserList />} />
+             <Route path="/github" element={<Github />} />
            </Routes>
         </BrowserRouter>
     
